@@ -1,6 +1,8 @@
 body {
     font-family: 'Crimson Text', serif;
-  }
+    background-color: #540101;
+    
+}
   
   .hero-text h1 {
     font-family: 'Cinzel', serif;
@@ -398,4 +400,5 @@ body {
   footer {
     background-color: #b22222;
     color: white;
+    
   }

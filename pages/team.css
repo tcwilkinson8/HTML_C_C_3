@@ -1,0 +1,113 @@
+body {
+    background-color: #540101;
+    
+}
+.site-nav {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(122, 27, 27, 0.95); /* rich scarlet overlay */
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #ffd700; /* golden edge */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5); /* golden glow */
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .site-nav li a {
+    text-decoration: none;
+    color: #fffbe6;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+  }
+  
+  .site-nav li a:hover {
+    color: #ffd700; /* golden hover */
+  }
+  .team-roster {
+    padding: 2rem;
+    background: url('parchment.jpg') center/cover no-repeat;
+    color: #2d0000;
+  }
+  
+  .team-roster h2 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+  }
+  
+  .player-group {
+    margin-bottom: 2rem;
+  }
+  
+  .player-group h3 {
+    color: #7a1b1b;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .player-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .player-card {
+    position: relative;
+    width: 180px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+  }
+  
+  .player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #ffd700;
+    border-radius: 10px;
+  }
+  
+  .player-stats {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 27, 27, 0.95);
+    color: #fffbe6;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .player-stats ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .player-card:hover .player-stats {
+    opacity: 1;
+  }
+  
