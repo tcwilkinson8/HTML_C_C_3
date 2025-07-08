@@ -2,3 +2,113 @@ body {
     background-color: #540101;
     
 }
+.site-nav {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(122, 27, 27, 0.95); /* rich scarlet overlay */
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #ffd700; /* golden edge */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5); /* golden glow */
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .site-nav li a {
+    text-decoration: none;
+    color: #fffbe6;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+  }
+  
+  .site-nav li a:hover {
+    color: #ffd700; /* golden hover */
+  }
+
+  .merch-section {
+    padding: 2rem;
+    background: url('parchment.jpg') center/cover no-repeat;
+    color: #2d0000;
+    border-top: 5px double #7a1b1b;
+  }
+  
+  .merch-section h2 {
+    font-family: 'Cinzel', serif;
+    color: #7a1b1b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .merch-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .merch-item {
+    background: #fff9e6;
+    border: 2px solid #ffd700aa;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .merch-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .merch-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #ffd700dd;
+  }
+  
+  #cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff9e6;
+  border-left: 4px solid #ffd700;
+  padding: 1rem;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.4);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#cart-panel.active {
+  display: flex;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.cart-item {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #7a1b1b;
+}
+
+  

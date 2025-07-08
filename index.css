@@ -1,6 +1,6 @@
 body {
     font-family: 'Crimson Text', serif;
-    background-color: #540101;
+    background-color: #5c0000;
     
 }
   
@@ -19,7 +19,7 @@ body {
     padding: 2rem 1rem;
     min-height: 400px;
     color: white;
-    background:#7a1b1b;
+    background:#c50000;
     flex-wrap: wrap;
   }
   
@@ -58,7 +58,7 @@ body {
     top: 1.5rem;
     right: 2rem;
     z-index: 10;
-    background: rgba(122, 27, 27, 0.95); /* rich scarlet overlay */
+    background: #890000; /* rich scarlet overlay */
     padding: 0.75rem 1.5rem;
     border: 2px solid #ffd700; /* golden edge */
     border-radius: 10px;
@@ -115,7 +115,7 @@ body {
     width: 100%;
     overflow: hidden;
     height: 400px;
-    background: linear-gradient(135deg, #7a1b1b, #ffcc00);
+    background: transparent;
   }
   
   .carousel-track {
@@ -126,11 +126,10 @@ body {
   
   .carousel-item {
     min-width: 100%;
-    padding: 2rem;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     color: #fffbe6;
   }
   
@@ -174,28 +173,15 @@ body {
 
 .carousel-item {
     min-width: 100%;
-    padding: 2rem;
+    padding-top:7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     color: #fffbe6;
-    background: url('parchment.jpg') no-repeat center center;
-    background-size: cover;
-    animation: parchment-scroll 0.8s ease-in-out;
+     background-color: #5c0000;
   }
   
-  /* Magical parchment scroll animation */
-  @keyframes parchment-scroll {
-    from {
-      opacity: 0;
-      transform: translateX(50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
   
   /* Dot indicators */
   .carousel-dots {
@@ -221,8 +207,7 @@ body {
   }
   
   .match-preview {
-    background: url('parchment.jpg') center/cover no-repeat;
-    border: 4px double #7a1b1b;
+   border: 4px double #7a1b1b;
     padding: 2rem;
     margin: 2rem auto;
     max-width: 900px;
@@ -235,7 +220,7 @@ body {
     font-family: 'Cinzel', serif;
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    color: #7a1b1b;
+    color: #fb7e00;
     text-align: center;
   }
   
@@ -243,7 +228,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    color: #000;
+    color: #ffa700;
   }
   
   .standings-table {
@@ -252,7 +237,7 @@ body {
   
   .standings-table h3 {
     font-family: 'Cinzel', serif;
-    color: #7a1b1b;
+    color: antiquewhite;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -275,7 +260,7 @@ body {
   }
 
   .sponsor-section {
-    background: url('parchment.jpg') center/cover no-repeat;
+    
     padding: 2rem;
     text-align: center;
     color: #4b0000;
@@ -287,7 +272,7 @@ body {
     font-family: 'Cinzel', serif;
     font-size: 2.2rem;
     margin-bottom: 2rem;
-    color: #7a1b1b;
+    color: #fb7e00;
   }
   
   .sponsor-grid {
@@ -314,10 +299,10 @@ body {
     background-color: #fffdf0;
   }
   
-  .sponsor p {
+  .sponsor a {
     font-weight: bold;
-    font-size: 1rem;
-    color: #2d0000;
+    font-size: 2rem;
+    color: #ffa700;
   }
   
   .sponsor img:hover {
@@ -332,7 +317,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem;
-    background: url('parchment.jpg') center/cover no-repeat;
+    
     color: #2d0000;
     gap: 2rem;
     border-top: 5px double #7a1b1b;
@@ -368,9 +353,12 @@ body {
   }
   
   /* Site Map Links */
+  .site-map{
+    padding-left: 4rem;
+  }
   .site-map ul {
     list-style-type: square;
-    padding-left: 1.2rem;
+    padding-left: 2rem;
   }
   
   .site-map a {
@@ -398,7 +386,27 @@ body {
 
   
   footer {
-    background-color: #b22222;
-    color: white;
+    background-color: #5c0000;
+    color: antiquewhite;
     
   }
+  a {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    color: #7a1b1b;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+ 
+  
+  a:hover {
+    color: #ffa700;
+    text-shadow: 0 0 5px #ffd700aa;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #d45a00;
+  }
+  

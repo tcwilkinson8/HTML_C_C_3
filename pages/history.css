@@ -2,3 +2,139 @@ body {
     background-color: #540101;
     
 }
+.site-nav {
+    position: absolute; 
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(122, 27, 27, 0.95); /* rich scarlet overlay */
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #ffd700; /* golden edge */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5); /* golden glow */
+  }
+  .hero, .main-content, .history-section:first-of-type {
+    margin-top: 80px;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .site-nav li a {
+    text-decoration: none;
+    color: #fffbe6;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+  }
+  
+  .site-nav li a:hover {
+    color: #ffd700; /* golden hover */
+  }
+  .history-section h2, .history-section h3 {
+    font-family: 'Cinzel', serif;
+    color: #7a1b1b;
+  }
+  
+  .alumni-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .alumni-card {
+    background: #fffbe6;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  
+  .alumni-card img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .credits {
+    padding: 2rem;
+    background: #fff9e6;
+    border-top: 3px dashed #7a1b1b;
+    color: #2d0000;
+  }
+  
+  .credits h2 {
+    font-family: 'Cinzel', serif;
+    color: #7a1b1b;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .credits ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .credits a {
+    color: #7a1b1b;
+    text-decoration: underline;
+  }
+  
+  .credits a:hover {
+    color: #ffd700;
+  }
+  
+  .honors-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background: #ffa700;
+    border-top: 5px dashed #7a1b1b;
+  }
+  
+  .honors-image img {
+    width: 120px;
+    margin-bottom: 1rem;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(122, 27, 27, 0.4);
+  }
+  
+  .honors-text ul {
+    list-style-type: square;
+    padding-left: 1rem;
+    color: #5c0000;
+    font-size: 1rem;
+  }
+  .era-block {
+    font-family: 'Cinzel', serif;
+    color: #ffa700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .era-block h3 {
+    font-family: 'Cinzel', serif;
+    color: #fb7e00;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #team-history h2{
+    color: antiquewhite;
+  }
+  
+  #honors h2 {
+    color:antiquewhite;
+  }
