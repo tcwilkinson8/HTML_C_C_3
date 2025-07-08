@@ -51,7 +51,18 @@ body {
   .player-group {
     margin-bottom: 2rem;
   }
+
+  .player-group-keeper {
+    position: relative;
+
+  }
+  .player-group-seeker {
+    position: relative;
+  }
   
+  #team h3 {
+    color: #fb7e00;
+  }
   .player-group h3 {
     color: #7a1b1b;
     margin-bottom: 1rem;
