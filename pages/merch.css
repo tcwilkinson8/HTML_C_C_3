@@ -110,5 +110,27 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 1px dashed #7a1b1b;
 }
+#cart-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(145deg, #7a1b1b, #d45a00);
+  color: #ffd700;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cart-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #ffd700cc;
+}
+
 
   
